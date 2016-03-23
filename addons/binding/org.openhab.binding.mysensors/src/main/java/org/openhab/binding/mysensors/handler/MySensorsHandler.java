@@ -162,7 +162,7 @@ public class MySensorsHandler extends BaseThingHandler implements MySensorsUpdat
             subType = MYSENSORS_SUBTYPE_V_VAR5;
             msg = command.toString();
         } else {
-            msg = "100";
+            msg = "";
         }
 
         MySensorsMessage newMsg = new MySensorsMessage(nodeId, childId, MYSENSORS_MSG_TYPE_SET, int_requestack, subType,
